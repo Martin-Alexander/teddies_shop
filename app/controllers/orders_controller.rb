@@ -6,7 +6,7 @@ class OrdersController < ApplicationController
 
   def create
     # Recived order information
-    teddy = Teddy.find(params[:teddy_id])
+    teddy = Teddy.find(params[:id])
     
     # Create an order
     order = Order.create(
